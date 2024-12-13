@@ -24,6 +24,7 @@
 <body> 
     <!-- Header Section -->
 	<div id="header-placeholder"></div>
+    <P>Hello</P>
 	<!-- End Header Section -->
 
     <!-- Featured Section -->
