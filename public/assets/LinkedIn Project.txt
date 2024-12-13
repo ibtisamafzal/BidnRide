@@ -1,0 +1,15 @@
+Bid & Ride is an innovative car auction system designed to streamline the process of buying and selling vehicles online. With plans to expand into bikes and other motorized vehicles, our platform is built using HTML, CSS, Bootstrap, JavaScript, PHP, MySQL, and jQuery. 
+
+Key features include:
+Account creation and login, Live auction interaction, Comprehensive search and filter options, Vehicle previews and detailed information, Favorites and watchlist functionality, Secure payment and transaction system, Interactive FAQ and support, Reviews and ratings system, Mobile responsiveness and dynamic views, Admin and seller interactions.
+
+With these functionalities, Bid & Ride aims to create a user-friendly and efficient marketplace for vehicle auctions.
+
+Link: https://dressmall.pk/Bid%20&%20Ride/Bid-n-Ride/
+
+Bid & Ride is an innovative car auction system designed to streamline the process of buying and selling vehicles online. With plans to expand into bikes and other motorized vehicles, our platform is built using HTML, CSS, Bootstrap, JavaScript, PHP, MySQL, and jQuery. Key features include: Account creation and login, Live auction interaction, Comprehensive search and filter options, Vehicle previews and detailed information, Favorites and watchlist functionality, Secure payment and transaction system, Interactive FAQ and support, Reviews and ratings system, Mobile responsiveness and dynamic views, Admin and seller interactions. With these functionalities, Bid & Ride aims to create a user-friendly and efficient marketplace for vehicle auctions. 
+
+Link: https://dressmall.pk/Bid%20&%20Ride/Bid-n-Ride/
+
+Skills: Web Development · HTML5 · Cascading Style Sheets (CSS) · JavaScript · MySQL
+
