@@ -47,7 +47,7 @@
                                 <li><a href="/pages/faq.html">FAQ</a></li>
                                 <li><a href="/pages/about.html">ABOUT</a></li>
                                 <li><a href="/pages/team.html">TEAM</a></li>
-                                <li><a href="/pages/signup.html"><button class="btn signup-btn">Sign Up!</button></a></li>
+                                <li><a href="{{ route('pages.signup') }}"><button class="btn signup-btn">Sign Up!</button></a></li>
                             </ul>
                         </nav>
                     </div>

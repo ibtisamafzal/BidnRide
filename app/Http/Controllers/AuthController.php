@@ -7,6 +7,10 @@ use App\Models\User;
 
 class AuthController extends Controller
 {
+    public function login()
+    {
+        return view('auth.login'); // Adjust this as needed
+    }
     // Show the authentication form
     public function showAuthForm()
     {
