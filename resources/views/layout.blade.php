@@ -25,7 +25,8 @@
 </head>
 <body> 
     <!-- Header Section -->
-	
+	<!-- Include Header -->
+    @include('partials.header')
 	<!-- End Header Section -->
 
     <!-- Featured Section -->
@@ -194,9 +195,10 @@
 	<!-- End Latest-Work Section -->
 
 
-	<!-- Footer Section -->
-	<div id="footer-placeholder"></div>
-	<!-- End Footer Section -->
+	<!-- Header Section -->
+	<!-- Include Header -->
+    @include('partials.footer')
+	<!-- End Header Section -->
 
 	<script src="assets/js/main.js"></script>
 

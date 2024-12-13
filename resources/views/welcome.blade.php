@@ -23,8 +23,8 @@
 </head>
 <body> 
     <!-- Header Section -->
-	<div id="header-placeholder"></div>
-    <P>Hello</P>
+	<!-- Include Header -->
+    @include('partials.header')
 	<!-- End Header Section -->
 
     <!-- Featured Section -->
@@ -194,7 +194,8 @@
 
 
 	<!-- Footer Section -->
-	<div id="footer-placeholder"></div>
+	<!-- Include Footer -->
+    @include('partials.footer')
 	<!-- End Footer Section -->
 
 	<script src="assets/js/main.js"></script>
