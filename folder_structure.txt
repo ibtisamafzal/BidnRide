@@ -7,7 +7,8 @@
 │   ├── Http
 │   │   ├── Controllers
 │   │   │   ├── AuthController.php
-│   │   │   └── Controller.php
+│   │   │   ├── Controller.php
+│   │   │   └── PageController.php
 │   ├── Models
 │   │   └── User.php
 │   ├── Providers
@@ -38,6 +39,7 @@
 │   │   ├── 0001_01_01_000000_create_users_table.php
 │   │   ├── 0001_01_01_000001_create_cache_table.php
 │   │   ├── 0001_01_01_000002_create_jobs_table.php
+│   │   └── 2024_12_13_103300_create_users_table.php
 │   └── seeders
 │       └── DatabaseSeeder.php
 ├── package.json
@@ -73,8 +75,9 @@
 │   │   ├── app.js
 │   │   └── bootstrap.js
 │   └── views
-│       ├── footer.blade.php
-│       ├── header.blade.php
+│       ├── partials
+│       │   ├── footer.blade.php
+│       │   └── header.blade.php
 │       ├── layout.blade.php
 │       ├── pages
 │       │   ├── about.blade.php
