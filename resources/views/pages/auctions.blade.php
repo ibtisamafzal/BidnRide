@@ -1,4 +1,131 @@
-<!DOCTYPE html>
+@extends('layout')
+
+@section('title', 'Auctions | Bid & Ride')
+
+@section('content')
+<div class="container my-5">
+    <h3 class="mb-4 auction-heading">Live Auctions: (12)</h3>
+    <div class="row auctions-row">
+        <!-- Product Cards -->
+        <div class="col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card" onclick="window.location='product2.html'">
+                <div class="image-container">
+                    <div class="overlay-text">
+                        <span class="reserve-status">RESERVE MET</span>
+                        <span class="favorite-icon">&#9733;</span> <!-- Star icon for favorites -->
+                    </div>
+                    <div class="card-img-top" style="background-image: url('/assets/images/carousal10.jpg');"></div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">2022 Rolls Royce</h5>
+                    <p class="card-text">Wraith Black Badge</p>
+                    <p class="location">Dubai, United Arab Emirates</p>
+                    <p class="latest-bid">Latest bid: <strong>US$401,000</strong></p>
+                    <p class="time-left">Time left: <strong>37:47:43</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card" onclick="window.location='product2.html'">
+                <div class="image-container">
+                    <div class="overlay-text">
+                        <span class="reserve-status">RESERVE MET</span>
+                        <span class="favorite-icon">&#9733;</span> <!-- Star icon for favorites -->
+                    </div>
+                    <div class="card-img-top" style="background-image: url('/assets/images/carousal9.jpg');"></div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">2022 Rolls Royce</h5>
+                    <p class="card-text">Wraith Black Badge</p>
+                    <p class="location">Dubai, United Arab Emirates</p>
+                    <p class="latest-bid">Latest bid: <strong>US$401,000</strong></p>
+                    <p class="time-left">Time left: <strong>37:47:43</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card" onclick="window.location='product2.html'">
+                <div class="image-container">
+                    <div class="overlay-text">
+                        <span class="reserve-status">RESERVE MET</span>
+                        <span class="favorite-icon">&#9733;</span> <!-- Star icon for favorites -->
+                    </div>
+                    <div class="card-img-top" style="background-image: url('/assets/images/carousal8.jpg');"></div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">2022 Rolls Royce</h5>
+                    <p class="card-text">Wraith Black Badge</p>
+                    <p class="location">Dubai, United Arab Emirates</p>
+                    <p class="latest-bid">Latest bid: <strong>US$401,000</strong></p>
+                    <p class="time-left">Time left: <strong>37:47:43</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card" onclick="window.location='product2.html'">
+                <div class="image-container">
+                    <div class="overlay-text">
+                        <span class="reserve-status">RESERVE MET</span>
+                        <span class="favorite-icon">&#9733;</span> <!-- Star icon for favorites -->
+                    </div>
+                    <div class="card-img-top" style="background-image: url('/assets/images/auc2.jpg');"></div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">2022 Rolls Royce</h5>
+                    <p class="card-text">Wraith Black Badge</p>
+                    <p class="location">Dubai, United Arab Emirates</p>
+                    <p class="latest-bid">Latest bid: <strong>US$401,000</strong></p>
+                    <p class="time-left">Time left: <strong>37:47:43</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card" onclick="window.location='product2.html'">
+                <div class="image-container">
+                    <div class="overlay-text">
+                        <span class="reserve-status">RESERVE MET</span>
+                        <span class="favorite-icon">&#9733;</span> <!-- Star icon for favorites -->
+                    </div>
+                    <div class="card-img-top" style="background-image: url('/assets/images/carousal1.jpeg');"></div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">2022 Rolls Royce</h5>
+                    <p class="card-text">Wraith Black Badge</p>
+                    <p class="location">Dubai, United Arab Emirates</p>
+                    <p class="latest-bid">Latest bid: <strong>US$401,000</strong></p>
+                    <p class="time-left">Time left: <strong>37:47:43</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card product-card" onclick="window.location='product2.html'">
+                <div class="image-container">
+                    <div class="overlay-text">
+                        <span class="reserve-status">RESERVE MET</span>
+                        <span class="favorite-icon">&#9733;</span> <!-- Star icon for favorites -->
+                    </div>
+                    <div class="card-img-top" style="background-image: url('/assets/images/carousal2.jpg');"></div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">2022 Rolls Royce</h5>
+                    <p class="card-text">Wraith Black Badge</p>
+                    <p class="location">Dubai, United Arab Emirates</p>
+                    <p class="latest-bid">Latest bid: <strong>US$401,000</strong></p>
+                    <p class="time-left">Time left: <strong>37:47:43</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -253,4 +380,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="/assets/js/main.js"></script>
 </body>
-</html>
+</html> --}}

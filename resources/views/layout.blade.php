@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+
+    <title>@yield('title', 'Bid & Ride')</title>
+</head>
+<body>
+    <!-- Header Section -->
+    @include('partials.header')
+
+    <!-- Main Content Section -->
+    <main>
+        @yield('content')
+    </main>
+
+    <!-- Footer Section -->
+    @include('partials.footer')
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+</body>
+</html>
+
+
+
+
+{{-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +67,7 @@
 	<script src="assets/js/owl.carousel.min.js"></script>
     <title>Bid & Ride</title>
 </head>
-<body> 
+<body>
     <!-- Header Section -->
 	<!-- Include Header -->
     @include('partials.header')
@@ -40,7 +84,7 @@
                             <button type="button" data-bs-target="#carAuctionCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carAuctionCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             <button type="button" data-bs-target="#carAuctionCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carAuctionCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button> 
+                            <button type="button" data-bs-target="#carAuctionCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
                             <button type="button" data-bs-target="#carAuctionCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
                         </div>
                         <div class="carousel-inner">
@@ -143,7 +187,7 @@
 								</div>
 							</div>
 						</div>
-				
+
 						<div class="col-md-4">
 							<div class="card" onclick="window.location.href='pages/product2.html';">
 								<img src="assets/images/carousal2.jpg" class="card-img-top" alt="Tesla">
@@ -156,7 +200,7 @@
 								</div>
 							</div>
 						</div>
-				
+
 						<div class="col-md-4">
 							<div class="card" onclick="window.location.href='pages/product1.html';">
 								<img src="assets/images/carousal3.jpg" class="card-img-top" alt="Ferrari">
@@ -189,7 +233,7 @@
 			</div>
 		</div>
 
-		
+
 
 	</section>
 	<!-- End Latest-Work Section -->
@@ -203,4 +247,4 @@
 	<script src="assets/js/main.js"></script>
 
 </body>
-</html>
+</html> --}}

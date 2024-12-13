@@ -1,48 +1,86 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PageController;
 
-Route::get('/auth', [AuthController::class, 'showAuthForm'])->name('auth');
-Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
-Route::get('/login', [AuthController::class, 'login'])->name('login');
-Route::get('/signup', [PageController::class, 'signup'])->name('pages.signup');
-
-Route::get('/signup', function () {
-    return view('pages.signup');
-})->name('pages.signup');
-
+// Static Pages
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+Route::view('/about', 'pages.about')->name('pages.about');
+Route::view('/auctions', 'pages.auctions')->name('pages.auctions');
+Route::view('/faq', 'pages.faq')->name('pages.faq');
+Route::view('/team', 'pages.team')->name('pages.team');
+Route::view('/product2', 'pages.product2')->name('pages.product2');
+
+// Authentication Routes
+Route::get('/auth', [AuthController::class, 'showAuthForm'])->name('auth');
+Route::get('/login', [AuthController::class, 'loginForm'])->name('login.form');
+Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
+Route::get('/signup', [PageController::class, 'signup'])->name('pages.signup');
+
+// Alternative Static Signup Route (if no backend logic is needed)
+// Route::view('/signup', 'pages.signup')->name('pages.signup');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// use Illuminate\Support\Facades\Route;
+
+
+// Route::get('/auth', [AuthController::class, 'showAuthForm'])->name('auth');
+// Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
+// Route::get('/login', [AuthController::class, 'login'])->name('login');
+// Route::get('/signup', [PageController::class, 'signup'])->name('pages.signup');
+
+// Route::get('/signup', function () {
+//     return view('pages.signup');
+// })->name('pages.signup');
 
 // Route::get('/', function () {
-//     return view('layout'); // Homepage
+//     return view('welcome');
 // });
 
-Route::get('/about', function () {
-    return view('pages.about'); // About page
-});
+// // Route::get('/', function () {
+// //     return view('layout'); // Homepage
+// // });
 
-Route::get('/auctions', function () {
-    return view('pages.auctions'); // Auctions page
-});
+// Route::get('/about', function () {
+//     return view('pages.about'); // About page
+// });
 
-Route::get('/faq', function () {
-    return view('pages.faq'); // FAQ page
-});
+// Route::get('/auctions', function () {
+//     return view('pages.auctions'); // Auctions page
+// });
 
-Route::get('/login', function () {
-    return view('pages.login'); // Login page
-});
+// Route::get('/faq', function () {
+//     return view('pages.faq'); // FAQ page
+// });
 
-Route::get('/signup', function () {
-    return view('pages.signup'); // Signup page
-});
+// Route::get('/login', function () {
+//     return view('pages.login'); // Login page
+// });
 
-Route::get('/team', function () {
-    return view('pages.team'); // Team page
-});
+// Route::get('/signup', function () {
+//     return view('pages.signup'); // Signup page
+// });
 
-Route::get('/product2', function () {
-    return view('pages.product2'); // Product page
-});
+// Route::get('/team', function () {
+//     return view('pages.team'); // Team page
+// });
+
+// Route::get('/product2', function () {
+//     return view('pages.product2'); // Product page
+// });
