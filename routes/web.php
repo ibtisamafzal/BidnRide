@@ -19,4 +19,7 @@ Route::view('/product2', 'pages.product2')->name('pages.product2');
 Route::get('/auth', [AuthController::class, 'showAuthForm'])->name('auth');
 Route::get('/login', [AuthController::class, 'loginForm'])->name('pages.login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
+
+// Sign Up Routes
 Route::get('/signup', [PageController::class, 'signup'])->name('pages.signup');
+Route::post('/signup', [AuthController::class, 'signup'])->name('signup.submit');

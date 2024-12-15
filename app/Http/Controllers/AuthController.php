@@ -3,36 +3,50 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User; // Import the User model
+use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    // Show the authentication form (signup/login page)
     public function showAuthForm()
     {
-        return view('pages.auth'); // Displays the auth page
+        return view('pages.auth');
     }
 
-    // Show the login form
     public function loginForm()
     {
-        return view('pages.login'); // Displays the login page
+        return view('pages.login');
     }
 
-    // Handle the login logic
     public function login(Request $request)
     {
-        // Add validation logic for login credentials
         $validatedData = $request->validate([
             'email' => 'required|email',
             'password' => 'required|min:6',
         ]);
 
-        // Authentication logic here
         if (auth()->attempt(['email' => $validatedData['email'], 'password' => $validatedData['password']])) {
             return redirect()->route('home')->with('success', 'Login successful!');
         }
 
-        // If authentication fails
         return back()->withErrors(['email' => 'Invalid credentials'])->withInput();
+    }
+
+    public function signup(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:6|confirmed',
+        ]);
+
+        // Create a new user
+        User::create([
+            'name' => $validatedData['name'],
+            'email' => $validatedData['email'],
+            'password' => Hash::make($validatedData['password']),
+        ]);
+
+        return redirect()->route('home')->with('success', 'Signup successful! Please login.');
     }
 }
