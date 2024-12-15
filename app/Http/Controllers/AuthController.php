@@ -2,12 +2,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
     public function showAuthForm()
     {
-        return view('pages.auth');
+        return view('pages.signup');
     }
 
     public function loginForm()
@@ -18,6 +20,29 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         // Handle login logic here
+    }
+
+
+
+    // Add the register method
+    public function register(Request $request)
+    {
+        // Validate the form inputs
+        $validated = $request->validate([
+            'username' => 'required|string|max:255',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|string|min:6|confirmed',
+        ]);
+
+        // Create the user
+        User::create([
+            'name' => $validated['username'],
+            'email' => $validated['email'],
+            'password' => Hash::make($validated['password']),
+        ]);
+
+        // Redirect to login page with a success message
+        return redirect()->route('login')->with('success', 'Account created successfully. Please log in.');
     }
 }
 

@@ -5,7 +5,29 @@
 @section('content')
 <div class="wrapper">
     <div class="title">Signup Form</div>
-    <form id="signupForm" method="POST" action="#">
+    {{-- <form id="signupForm" method="POST" action="{{ route('signup') }}">
+        @csrf
+        <div class="field">
+            <input type="text" name="username" required>
+            <label>Username</label>
+        </div>
+        <div class="field">
+            <input type="email" name="email" required>
+            <label>Email Address</label>
+        </div>
+        <div class="field">
+            <input type="password" name="password" required>
+            <label>Password</label>
+        </div>
+        <div class="field">
+            <input type="password" name="password_confirmation" required>
+            <label>Confirm Password</label>
+        </div>
+        <div class="field">
+            <input type="submit" value="Signup">
+        </div>
+    </form> --}}
+    <form id="signupForm" method="POST" action="{{ route('signup.submit') }}">
         @csrf
         <div class="field">
             <input type="text" id="username" name="username" required>

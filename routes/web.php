@@ -17,13 +17,15 @@ Route::view('/product2', 'pages.product2')->name('pages.product2');
 
 // Authentication Routes
 Route::get('/auth', [AuthController::class, 'showAuthForm'])->name('auth');
-Route::get('/login', [AuthController::class, 'loginForm'])->name('login.form');
+Route::get('/login', [AuthController::class, 'loginForm'])->name('pages.login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
 Route::get('/signup', [PageController::class, 'signup'])->name('pages.signup');
 
 // Alternative Static Signup Route (if no backend logic is needed)
 // Route::view('/signup', 'pages.signup')->name('pages.signup');
 
+// Add Route for Registration
+Route::post('/signup', [AuthController::class, 'register'])->name('signup.submit');
 
 
 
