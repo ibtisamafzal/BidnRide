@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Welcome to Bid & Ride')
+@section('title', 'Bid & Ride - Home')
 
 @section('content')
     <!-- Featured Section -->
@@ -70,7 +70,7 @@
                 <div class="container my-5">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="card" onclick="window.location.href='pages/product2.blade.php';" style="cursor: pointer;">
+                            <div class="card" onclick="window.location.href='{{ route('product2') }}';" style="cursor: pointer;">
                                 <img src="assets/images/carousal5.jpg" class="card-img-top" alt="Ferrari">
                                 <div class="card-body">
                                     <h5 class="card-title">2008 Ferrari</h5>
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                        <div class="card" onclick="window.location.href='pages/product2.blade.php';" style="cursor: pointer;">
+                        <div class="card" onclick="window.location.href='{{ route('product2') }}';" style="cursor: pointer;">
                                 <img src="assets/images/carousal2.jpg" class="card-img-top" alt="Tesla">
                                 <div class="card-body">
                                     <h5 class="card-title">2024 Porsche</h5>
@@ -98,7 +98,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                        <div class="card" onclick="window.location.href='pages/product2.blade.php';" style="cursor: pointer;">
+                        <div class="card" onclick="window.location.href='{{ route('product2') }}';" style="cursor: pointer;">
                                 <img src="assets/images/carousal3.jpg" class="card-img-top" alt="Ferrari">
                                 <div class="card-body">
                                     <h5 class="card-title">2005 Ferrari</h5>

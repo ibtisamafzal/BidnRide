@@ -14,6 +14,9 @@ Route::view('/auctions', 'pages.auctions')->name('pages.auctions');
 Route::view('/faq', 'pages.faq')->name('pages.faq');
 Route::view('/team', 'pages.team')->name('pages.team');
 Route::view('/product2', 'pages.product2')->name('pages.product2');
+Route::get('/product2', function () {
+    return view('pages.product2');
+})->name('product2');
 
 // Authentication Routes
 Route::get('/auth', [AuthController::class, 'showAuthForm'])->name('auth');

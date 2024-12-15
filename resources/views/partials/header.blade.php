@@ -33,27 +33,28 @@
         </div>
 
         <div class="main-header">
-            <div class="container">
-                <div class="row ml-0 mr-0">
-                    <div class="logo col-sm-3">
-                        <img src="../assets/images/logo-main.png" alt="Bid&Ride Logo">
-                    </div>
-                    <div class="menu-container col-sm-9">
-                        <nav class="main-menu">
-                            <ul class="menu">
-                                <li><a href="pages/auctions.html">AUCTIONS</a></li>
-                                <li><a href="#">RESULTS</a></li>
-                                <li><a href="#">SELL</a></li>
-                                <li><a href="/pages/faq.html">FAQ</a></li>
-                                <li><a href="/pages/about.html">ABOUT</a></li>
-                                <li><a href="/pages/team.html">TEAM</a></li>
-                                <li><a href="{{ route('signup.submit') }}"><button class="btn signup-btn">Sign Up!</button></a></li>
-                            </ul>
-                        </nav>
-                    </div>
+        <div class="container">
+            <div class="row ml-0 mr-0">
+                <div class="logo col-sm-3">
+                    <a href="{{ url('/') }}"><img src="{{ asset('assets/images/logo-main.png') }}" alt="Bid&Ride Logo">
+                    </a>
+                </div>
+                <div class="menu-container col-sm-9">
+                    <nav class="main-menu">
+                        <ul class="menu">
+                            <li><a href="{{ route('pages.auctions') }}">AUCTIONS</a></li>
+                            <li><a href="#">RESULTS</a></li>
+                            <li><a href="#">SELL</a></li>
+                            <li><a href="{{ route('pages.faq') }}">FAQ</a></li>
+                            <li><a href="{{ route('pages.about') }}">ABOUT</a></li>
+                            <li><a href="{{ route('pages.team') }}">TEAM</a></li>
+                            <li><a href="{{ route('pages.signup') }}"><button class="btn signup-btn">Sign Up!</button></a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
+    </div>
     </header>
     <!-- End Header Section -->
 
