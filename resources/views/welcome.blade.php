@@ -38,7 +38,7 @@
                             <div class="carousel-caption d-none d-md-block">
                                 <small>2024</small>
                                 <h5>TESLA</h5>
-                                <p>Cybertruck CyberBeast - Foundation Series</p>
+                                <p>CyberTruck CyberBeast - Foundation Series</p>
                             </div>
                             <div class="bid-btn-container">
                                 <a href="#" class="btn btn-light">Bid Now</a>
