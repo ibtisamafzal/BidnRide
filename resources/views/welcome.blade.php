@@ -70,7 +70,7 @@
                 <div class="container my-5">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="card">
+                            <div class="card" onclick="window.location.href='pages/product2.blade.php';" style="cursor: pointer;">
                                 <img src="assets/images/carousal5.jpg" class="card-img-top" alt="Ferrari">
                                 <div class="card-body">
                                     <h5 class="card-title">2008 Ferrari</h5>
@@ -78,10 +78,13 @@
                                     <p class="price">US$100,000</p>
                                     <p class="time-left">3 days left</p>
                                 </div>
+                                <div class="card-footer text-center">
+                                    <a href="pages/product2.php" class="btn btn-light">Bid Now</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card">
+                        <div class="card" onclick="window.location.href='pages/product2.blade.php';" style="cursor: pointer;">
                                 <img src="assets/images/carousal2.jpg" class="card-img-top" alt="Tesla">
                                 <div class="card-body">
                                     <h5 class="card-title">2024 Porsche</h5>
@@ -89,16 +92,22 @@
                                     <p class="price">US$401,000</p>
                                     <p class="time-left">2 days left</p>
                                 </div>
+                                <div class="card-footer text-center">
+                                    <a href="pages/product2.php" class="btn btn-light">Bid Now</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card">
+                        <div class="card" onclick="window.location.href='pages/product2.blade.php';" style="cursor: pointer;">
                                 <img src="assets/images/carousal3.jpg" class="card-img-top" alt="Ferrari">
                                 <div class="card-body">
                                     <h5 class="card-title">2005 Ferrari</h5>
                                     <p class="card-text">F430 Spider</p>
                                     <p class="price">US$46,500</p>
                                     <p class="time-left">8 days left</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="pages/product2.php" class="btn btn-light">Bid Now</a>
                                 </div>
                             </div>
                         </div>

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
 
     <title>@yield('title', 'Bid & Ride')</title>
+    @stack('styles')
 </head>
 <body>
     <!-- Header Section -->

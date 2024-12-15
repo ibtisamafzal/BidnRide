@@ -13,7 +13,7 @@
     <!-- Footer Section -->
 	<footer>
 		<div class="main-footer">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="footer-content-row row ml-0 mr-0">
 					<div class="Column-1 col-sm-3">
 						<h3>Who we are</h3>
@@ -54,12 +54,9 @@
 						<ul>
 							<li><a href="/pages/auctions.html">Auctions</a></li>
 							<li><p>.</p></li>
-							<li><p>.</p></li>
 							<li><a href="#">Results</a></li>
 							<li><p>.</p></li>
 							<li><a href="#">Sell</a></li>
-							<li><p>.</p></li>
-							<li><a href="pages/faq.html">FAQ</a></li>
 							<li><p>.</p></li>
 							<li><a href="pages/about.html">About</a></li>
 							<li><a href="pages/team.html">Team</a></li>

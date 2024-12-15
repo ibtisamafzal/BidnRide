@@ -294,7 +294,20 @@ a:hover, a:visited, a:active{
 .owl-dots button.active{
 	border-color: #0351aa !important;
 }
-
+.card:hover {
+    
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.card-footer {
+    background-color: #fff;
+    padding: 15px;
+    
+}
+.card .btn{
+    background-color: #fff;
+    border: none;
+}
 .card {
 	position: relative;
 	overflow: hidden;
@@ -304,9 +317,7 @@ a:hover, a:visited, a:active{
 .card img {
 	transition: transform 0.7s ease;
 }
-.card:hover img {
-	transform: scale(1.05);
-}
+
 .time-left {
 	font-size: 1rem;
 	color: #ffc107;
@@ -407,6 +418,10 @@ a:hover, a:visited, a:active{
 }
 .links-col ul li:last-child{
 	margin-right: 0px;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
