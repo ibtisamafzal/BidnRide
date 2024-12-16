@@ -1,28 +1,20 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\PageController;
 
-// Static Pages
 Route::get('/', function () {
     return view('welcome');
-})->name('home');
+});
 
-Route::view('/about', 'pages.about')->name('pages.about');
-Route::view('/auctions', 'pages.auctions')->name('pages.auctions');
-Route::view('/faq', 'pages.faq')->name('pages.faq');
-Route::view('/team', 'pages.team')->name('pages.team');
-Route::view('/product2', 'pages.product2')->name('pages.product2');
-Route::get('/product2', function () {
-    return view('pages.product2');
-})->name('product2');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-// Authentication Routes
-Route::get('/auth', [AuthController::class, 'showAuthForm'])->name('auth');
-Route::get('/login', [AuthController::class, 'loginForm'])->name('pages.login');
-Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
 
-// Sign Up Routes
-Route::get('/signup', [PageController::class, 'signup'])->name('pages.signup');
-Route::post('/signup', [AuthController::class, 'signup'])->name('signup.submit');
+require __DIR__.'/auth.php';
