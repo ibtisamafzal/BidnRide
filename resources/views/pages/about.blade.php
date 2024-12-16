@@ -9,7 +9,7 @@
             <div class="col-lg-6">
                 <h1 class="mb-4 about-heading">About <span class="text-primary">Us</span></h1>
                 <p class="lead">Welcome to <strong>Bid & Ride</strong> — the premier online destination for automotive enthusiasts and collectors. Our mission is to connect buyers and sellers worldwide through a secure and streamlined platform designed for all types of vehicles. Whether you're looking to buy a classic car, a luxury ride, or a rare collectible, Bid & Ride brings you closer to your dream vehicle with just a click.</p>
-                <p class="lead">At <strong>Bid & Ride</strong>, we understand passion that drives car enthusiasts, and we're committed to offering a premium auction experience that delivers convenience, trust, and value. Join our community of car lovers today and discover the future of vehicle auctions.</p>
+                <p class="lead">At <strong>Bid & Ride</strong>, we understand the passion that drives car enthusiasts, and we're committed to offering a premium auction experience that delivers convenience, trust, and value. Join our community of car lovers today and discover the future of vehicle auctions.</p>
             </div>
             <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <img src="/assets/images/carousal2.jpg" alt="Logo Bid & Ride" class="about-img img-fluid img-responsive shadow-lg" style="max-width: 80%; border-radius: 15px;">
