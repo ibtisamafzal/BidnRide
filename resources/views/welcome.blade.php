@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Bid & Ride - Home')
+@section('title', 'Bid & Ride - Dashboard')
 
 @section('content')
     <!-- Featured Section -->
