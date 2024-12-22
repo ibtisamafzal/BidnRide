@@ -6,7 +6,7 @@
 <div class="container mt-5 section-1">
     <!-- Product Title & Price -->
     <div class="car-name d-flex justify-content-between align-items-center">
-        <h1>2024 <b>Porsche</b> 911 (992) GT3 RS 'Weissach'</h1>
+        <h1>2024 <b>Porsche</b> 911 (992) GT3 RS 'Weissaach'</h1>
         <h2>€401,000</h2>
     </div>
 
