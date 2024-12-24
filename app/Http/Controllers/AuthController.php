@@ -12,6 +12,10 @@ class AuthController extends Controller
     {
         return view('pages.auth');
     }
+    public function submitSignup(Request $request)
+    {
+        return redirect()->back()->with('success', 'Signup successful!');
+    }
 
     public function loginForm()
     {

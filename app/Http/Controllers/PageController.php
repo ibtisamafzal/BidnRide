@@ -20,6 +20,11 @@ class PageController extends Controller
         return view('pages.auctions'); // Auctions page
     }
 
+    public function products()
+    {
+        return view('pages.product2');
+    }
+
     public function faq()
     {
         return view('pages.faq'); // FAQ page

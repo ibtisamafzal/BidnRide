@@ -79,7 +79,7 @@
                                     <p class="time-left">3 days left</p>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <a href="pages/product2.php" class="btn btn-light">Bid Now</a>
+                                    <a href="{{ route('product2') }}" class="btn btn-light">Bid Now</a>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                                     <p class="time-left">2 days left</p>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <a href="pages/product2.php" class="btn btn-light">Bid Now</a>
+                                    <a href="{{ route('product2') }}" class="btn btn-light">Bid Now</a>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
                                     <p class="time-left">8 days left</p>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <a href="pages/product2.php" class="btn btn-light">Bid Now</a>
+                                    <a href="{{ route('product2') }}" class="btn btn-light">Bid Now</a>
                                 </div>
                             </div>
                         </div>
