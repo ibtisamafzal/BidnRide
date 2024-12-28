@@ -42,13 +42,23 @@
                 <div class="menu-container col-sm-9">
                     <nav class="main-menu">
                         <ul class="menu">
+                            <li><a href="{{ route('home') }}">HOME</a></li>
                             <li><a href="{{ route('pages.auctions') }}">AUCTIONS</a></li>
                             <li><a href="#">RESULTS</a></li>
                             <li><a href="#">SELL</a></li>
                             <li><a href="{{ route('pages.faq') }}">FAQ</a></li>
                             <li><a href="{{ route('pages.about') }}">ABOUT</a></li>
                             <li><a href="{{ route('pages.team') }}">TEAM</a></li>
-                            <li><a href="{{ route('register') }}"><button class="btn signup-btn">Sign Up!</button></a></li>
+                            @if(Auth::check())
+                                <li>
+                                    <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+                                        @csrf
+                                        <button type="submit" class="btn signup-btn">Logout</button>
+                                    </form>
+                                </li>
+                            @else
+                                <li><a class="register-login" href="{{ route('register') }}"><button class="btn signup-btn">Register/ Login</button></a></li>
+                            @endif
                         </ul>
                     </nav>
                 </div>

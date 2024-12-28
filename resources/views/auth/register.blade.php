@@ -1,10 +1,10 @@
 @extends('layout')
 
-@section('title', 'Signup Form')
+@section('title', 'Register | Bid & Ride')
 
 @section('content')
 <div class="wrapper">
-    <div class="title">Signup Form</div>
+    <div class="title">Register Now</div>
         
     <form method="POST" action="{{ route('register') }}">
     @csrf

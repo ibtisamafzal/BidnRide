@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Login Form')
+@section('title', 'Login | Bid & Ride')
 
 @section('content')
 <div class="wrapper">

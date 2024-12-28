@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Team Page')
+@section('title', 'Team | Bid & Ride')
 
 @section('content')
 <section class="team-section text-center py-5">
