@@ -317,7 +317,6 @@
 
 
 	<!-- Footer Section -->
-	<!-- Include Footer -->
     @include('partials.footer')
 	<!-- End Footer Section -->
 
