@@ -7,12 +7,12 @@ class PageController extends Controller
 {
     public function signup()
     {
-        return view('pages.signup'); // Signup page
+        return view('pages.signup');
     }
 
     public function login()
     {
-        return view('pages.login'); // Correct path to the login view
+        return view('pages.login');
     }
     public function auctions()
     {

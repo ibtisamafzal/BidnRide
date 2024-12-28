@@ -26,9 +26,7 @@ Route::get('/team', [PageController::class, 'team'])->name('pages.team');
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
 Route::post('/login', [AuthenticatedSessionController::class, 'store']);
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
-
 Route::post('/signup', [PageController::class, 'handleSignup'])->name('signup.submit');
-
 Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
 Route::post('/register', [RegisteredUserController::class, 'store']);
 
@@ -37,9 +35,12 @@ Route::get('/verify-email', [EmailVerificationPromptController::class, '__invoke
 Route::get('/verify-email/{id}/{hash}', [VerifyEmailController::class, '__invoke'])->middleware(['signed', 'throttle:6,1'])->name('verification.verify');
 
 // Dashboard (Protected)
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+
 
 
 // Include Auth Routes
