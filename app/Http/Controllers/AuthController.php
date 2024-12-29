@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User; // Import the User model
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -29,7 +30,7 @@ class AuthController extends Controller
             'password' => 'required|min:6',
         ]);
 
-        if (auth()->attempt(['email' => $validatedData['email'], 'password' => $validatedData['password']])) {
+        if (Auth ::attempt(['email' => $validatedData['email'], 'password' => $validatedData['password']])) {
             return redirect()->route('home')->with('success', 'Login successful!');
         }
 

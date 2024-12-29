@@ -13,7 +13,7 @@
             <!-- Team Member 1 -->
             <div class="col-md-4">
                 <div class="team-member">
-                    <img src="https://via.placeholder.com/200" alt="Adnan Tariq" class="rounded-circle team-img">
+                    <img src="/assets/images/adnan.jpg" alt="Adnan Tariq" class="rounded-circle team-img">
                     <h4 style="margin-top: 10px;" class="name">Adnan Tariq</h4>
                     <p class="title">Co-Founder</p>
                     <p class="location">Pakistan</p>
